@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
     int faseatualindex = 0;
 
     // Fase 
-    colorList[ FaseE.inicial.index ]='Blue';
+    colorList[ FaseE.inicial.index ]='Especial'; // 
     altColorList[ FaseE.inicial.index ]=Colors.white54;
     // Fase 
     colorList[ FaseE.desafioTapaTapa.index ]='CurativoPurple';

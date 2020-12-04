@@ -50,13 +50,17 @@ class _ContentCardState extends State<ContentCard> {
       alignment: Alignment.center,
       fit: StackFit.expand,
       children: <Widget>[
-        Transform(
+        Container(
+          decoration: new BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.blueAccent,
+              ), child: Transform(
           transform: Matrix4.diagonal3Values(scaleX, scaleY, 1),
           child: Transform.translate(
             offset: Offset(-(scaleX - 1) / 2 * size.width, -(scaleY - 1) / 2 * size.height + offsetY),
             child: Image.asset('images/Bg-${widget.color}.png', fit: BoxFit.cover ),
           ),
-        ),
+        )),
         Container(
           alignment: Alignment.center,
           child: Padding(
